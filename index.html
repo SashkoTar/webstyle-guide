@@ -1,33 +1,45 @@
 <!DOCTYPE html>
+
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="button.css">
 </head>
 <html>
 
 <body>
-  <ul>
-    <li><a href="#text">Text</a></li>
-    <li><a href="#button">Button</a></li>    
-    <li class="right"><a href="#about">Sign Out</a></li>
-    <li class="right"><a href="#about">Profile</a></li>
-  </ul>
+  <div class="navbar">
+    <ul>
+      <li><a href="#text">Text</a></li>
+      <li><a href="#button">Button</a></li>
+      <li class="right"><a href="#about">Sign Out</a></li>
+      <li class="right"><a href="#about">Profile</a></li>
+    </ul>
+  </div>
 
-  <p id="text"> <h1>Text</h1> 
+  <div class="main-content">
+  <p id="text">
+  <h1>Text</h1>
 
   Here is simple text
   <div class="bold">Here is bold text</div>
-  <h1>Here is H1 Text</h2>
+  <h1>Here is H1 Text</h1>
   <h2>Here is H2 Text</h2>
   <h3>Here is H3 Text</h3>
   <h4>Here is H4 Text</h4>
   <h5>Here is H5 Text</h5>
   <h6>Here is H6 Text</h6>
-     
+
   </p>
+ 
 
+  <p id="button">
+  <h1>Buttons</h1>
+  <input type="button" class="btn" value="Cancel">
+  <input type="button" class="btn btn-primary" value="Save">
+  <input type="button" class="btn btn-onechar" value="x">
 
-  <p id="button"> <h1>Buttons</h1>
-
-  </p>  
+  </p>
 </body>
+
 </html>
