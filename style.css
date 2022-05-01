@@ -12,6 +12,10 @@
     --color-10: #f5f8fa;
     }
 
+    *, *:before, *:after {
+        box-sizing: border-box;
+      }
+
     .rg-border {
         border: solid red 1px;
     }
@@ -24,7 +28,7 @@
     }
 
     body {
-        margin: 0;
+        margin: 50px 0;
         background-color: var(--color-20);        
     }
 
