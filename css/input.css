@@ -1,0 +1,50 @@
+input[type=text] {    
+    width: 200px;
+    border:0;
+    box-shadow: 0 0 5px var(--color-40);
+    border-radius:5px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;    
+    padding: 5px;
+}
+
+input[type=text]:hover {    
+    box-shadow: 0 0 5px 2px var(--color-40);
+}
+
+input[type=text]:focus {    
+    outline: none;
+    box-shadow: 0 0 5px 2px var(--color-50);
+}
+
+.float-up {
+    width: 200px;
+    position: relative; 
+    margin-top: 25px;     
+    border: solid 1px red;    
+} 
+
+.float-up span {
+    position: absolute;
+    left: 10px;   
+    top: 0px;   
+    transform: translateY(0);
+    transition-duration: 300ms;
+    color: var(--color-40);
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    border: solid 1px gold;
+  }
+
+  .float-up > input[type=text]:not(:placeholder-shown)+span,
+  .float-up > input[type=text]:focus+span {
+    transform: translateY(-25px);
+    font-size: 0.825em;
+    font-weight: 700;
+    color: var(--color-50);
+    transition-duration: 300ms;
+    letter-spacing: 0;
+  }
