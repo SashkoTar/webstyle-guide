@@ -23,7 +23,8 @@ input[type=text]:focus {
     width: 200px;
     position: relative; 
     margin-top: 25px;     
-    border: solid 1px red;    
+    border: solid 1px red;
+    display: inline;    
 } 
 
 .float-up span {
