@@ -1,5 +1,5 @@
 input[type=text] {    
-    width: 200px;
+    width: 90%;
     border:0;
     box-shadow: 0 0 5px var(--color-40);
     border-radius:5px;
@@ -10,6 +10,7 @@ input[type=text] {
     padding: 5px;
 }
 
+
 input[type=text]:hover {    
     box-shadow: 0 0 5px 2px var(--color-40);
 }
@@ -19,33 +20,39 @@ input[type=text]:focus {
     box-shadow: 0 0 5px 2px var(--color-50);
 }
 
+
+
 .float-up {
-    width: 200px;
+    width: 400px;
     position: relative; 
-    margin-top: 25px;     
-    border: solid 1px red;
-    display: inline;    
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    margin-right: 15px;  
+    margin-left: 10%;  
+    display: block;    
 } 
 
-.float-up span {
-    position: absolute;
+.float-up span {    
+    position: absolute;    
     left: 10px;   
-    top: 0px;   
+    top: 5px;   
     transform: translateY(0);
     transition-duration: 300ms;
     color: var(--color-40);
     overflow: hidden; 
     white-space: nowrap; 
-    text-overflow: ellipsis; 
-    border: solid 1px gold;
+    text-overflow: ellipsis;   
+    border-radius: 5px; 
+    padding: 1px; 
   }
 
   .float-up > input[type=text]:not(:placeholder-shown)+span,
   .float-up > input[type=text]:focus+span {
-    transform: translateY(-25px);
-    font-size: 0.825em;
+    transform: translateY(-22px);
+    font-size: 0.8em;
     font-weight: 700;
     color: var(--color-50);
+    background-color: var(--color-10);
     transition-duration: 300ms;
     letter-spacing: 0;
   }

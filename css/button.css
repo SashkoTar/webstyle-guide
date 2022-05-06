@@ -26,3 +26,8 @@
 .btn:hover {
     background-color: var(--color-40); 
 }
+
+.btn-small {
+    padding: 5px 10px; 
+    font-size: 12px;
+}

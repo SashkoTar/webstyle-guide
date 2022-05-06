@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 
 <head>
-    <!--link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/table.css">
-    <link rel="stylesheet" href="css/input.css"-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/input.css">
 
     <style>
         .form-area {
             margin-left: 20%;
             margin-right: 20%;
+            margin-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             display: block;
-            background-color: aqua;
+            background-color: var(--color-30);
+            border-radius: 25px;
         }
 
+        .form-area>div {
+            display: flex;
+        }
+
+
+
+        .red-brd {
+            border: solid 1px red;
+        }
+
+        .green-brd {
+            border: solid 1px green;
+        }
+
+        .mrg-left-10 {
+            margin-left: 10%;
+        }
+
+        /*TODO Add row class */
     </style>
 </head>
 <html>
 
 <body>
 
+    <div class="navbar">
+        <ul>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#input">Inputs</a></li>
+            <li><a href="parser.html">Parser</a></li>
+            <li class="right"><a href="#about">Sign Out</a></li>
+            <li class="right"><a href="#about">Profile</a></li>
+        </ul>
+    </div>
 
-    <div class="main-content">
-        <h3>Parser</h3>
+    <div class="main-content">        
 
-        <div class="form-area">
-
-            <div class="float-up">
-                <input type="text" placeholder="&nbsp;" />
-                <span>Name</span>
+        <div class="form-area">            
+            <div>
+                <label class="float-up">
+                    <input type="text" placeholder="&nbsp;" />
+                    <span>Name</span>
+                </label>
             </div>
+            <div>
+                <label class="float-up">
+                    <input type="text" placeholder="&nbsp;" />
+                    <span>Crawled Url</span>
+                </label>
+                <input type="button" class="btn btn-primary" value="Advice">
+            </div>
+            <div>
 
-            <label class="float-up">
-                <input type="text" placeholder="&nbsp;" />
-                <span>Crawled Url</span>
-            </label>
+                <label class="float-up">
+                    <input type="text" placeholder="&nbsp;" />
+                    <span>Region Selector</span>
+                </label>
+            </div>
+            <div>
+                <label class="float-up">
+                    <input type="text" placeholder="&nbsp;" />
+                    <span>Next Page Selector</span>
+                </label>
+            </div>
+            <div>
+                <label class="float-up">
+                    <input type="text" placeholder="&nbsp;" />
+                    <span>Description</span>
+                </label>
 
-
-            <label class="float-up">
-                <input type="text" placeholder="&nbsp;" />
-                <span>Region Selector</span>
-            </label>
-
+            </div>
         </div>
 
-    </div>   
+        <div class="form-area">            
+            <table class="mrg-left-10">
+                <tr>
+                    <th>Cell Name</th>
+                    <th>Cell Selector</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="button" class="btn btn-small" value="Remove"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="button" class="btn btn-small" value="Remove"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="text" placeholder="&nbsp;" /></td>
+                    <td><input type="button" class="btn btn-small" value="Remove"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
 
 
 
