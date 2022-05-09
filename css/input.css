@@ -1,5 +1,5 @@
 input[type=text] {    
-    width: 90%;
+    width: 100%;
     border:0;
     box-shadow: 0 0 5px var(--color-40);
     border-radius:5px;
@@ -25,10 +25,7 @@ input[type=text]:focus {
 .float-up {
     width: 400px;
     position: relative; 
-    margin-top: 15px; 
-    margin-bottom: 15px;
-    margin-right: 15px;  
-    margin-left: 10%;  
+    margin: 15px; 
     display: block;    
 } 
 
@@ -52,7 +49,7 @@ input[type=text]:focus {
     font-size: 0.8em;
     font-weight: 700;
     color: var(--color-50);
-    background-color: var(--color-10);
+   /* background-color:  white; var(--color-10); */
     transition-duration: 300ms;
     letter-spacing: 0;
   }

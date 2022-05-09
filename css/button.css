@@ -1,15 +1,16 @@
 .btn {
     border: var(--color-60) solid 1px;
     background-color: var(--color-20);
-    color: var(--color-60);
-    padding: 15px 32px;
+    color: var(--color-60);    
     text-align: center;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
     margin: 4px 2px;
+    padding: 0 1em;
     cursor: pointer;
     border-radius: 30px;
+    height: 2em;
 }
 
 .btn-primary {
@@ -27,7 +28,6 @@
     background-color: var(--color-40); 
 }
 
-.btn-small {
-    padding: 5px 10px; 
+.btn-small {    
     font-size: 12px;
 }

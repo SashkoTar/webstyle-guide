@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="../css/input.css">
 
     <style>
-        .form-area {
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-bottom: 20px;
-            padding-top: 30px;
-            padding-bottom: 30px;
+        .control-section {
+            margin: 40px 20% 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             display: block;
             background-color: var(--color-30);
-            border-radius: 25px;
+            border-radius: 15px;
+            position: relative;
         }
 
-        .form-area>div {
+        .control-section .control-row {
             display: flex;
+            align-items: center;
         }
 
+        .control-section .control-section-title {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: larger;
+        }
 
+        .control-row > table {
+            margin-left: 10px;
+        }
 
         .red-brd {
             border: solid 1px red;
@@ -56,36 +65,37 @@
         </ul>
     </div>
 
-    <div class="main-content">        
-
-        <div class="form-area">            
-            <div>
+    <div class="main-content">
+        <br><br><br>
+        <div class="control-section">
+            <label class="control-section-title">Data Region Specification</label>
+            <div class="control-row">
                 <label class="float-up">
                     <input type="text" placeholder="&nbsp;" />
                     <span>Name</span>
                 </label>
             </div>
-            <div>
+            <div class="control-row">
                 <label class="float-up">
                     <input type="text" placeholder="&nbsp;" />
                     <span>Crawled Url</span>
                 </label>
                 <input type="button" class="btn btn-primary" value="Advice">
             </div>
-            <div>
+            <div class="control-row">
 
                 <label class="float-up">
                     <input type="text" placeholder="&nbsp;" />
                     <span>Region Selector</span>
                 </label>
             </div>
-            <div>
+            <div class="control-row">
                 <label class="float-up">
                     <input type="text" placeholder="&nbsp;" />
                     <span>Next Page Selector</span>
                 </label>
             </div>
-            <div>
+            <div class="control-row">
                 <label class="float-up">
                     <input type="text" placeholder="&nbsp;" />
                     <span>Description</span>
@@ -94,31 +104,41 @@
             </div>
         </div>
 
-        <div class="form-area">            
-            <table class="mrg-left-10">
-                <tr>
-                    <th>Cell Name</th>
-                    <th>Cell Selector</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="button" class="btn btn-small" value="Remove"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="button" class="btn btn-small" value="Remove"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="text" placeholder="&nbsp;" /></td>
-                    <td><input type="button" class="btn btn-small" value="Remove"></td>
-                </tr>
-            </table>
+        <div class="control-section">
+            <label class="control-section-title">Record Specification</label>
+            <div class="control-row">
+                <table class="col-6">
+                    <tr>
+                        <th class="col-2">Cell Name</th>
+                        <th class="col-6">Cell Selector</th>
+                        <th >Action</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="button" class="btn btn-small" value="Remove"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="button" class="btn btn-small" value="Remove"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="text" placeholder="&nbsp;" /></td>
+                        <td><input type="button" class="btn btn-small" value="Remove"></td>
+                    </tr>
+                </table>                
+            </div>
         </div>
 
+        <div class="control-section">            
+            <div class="control-row">
+                <input type="button" class="btn btn-primary mrg-left-10"  value="Preview"dis >
+                <input type="button" class="btn btn-primary mrg-left-10" value="Save">
+                <input type="button" class="btn" value="Cancel">
+            </div>
+        </div>        
     </div>
 
 
