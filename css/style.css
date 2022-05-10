@@ -1,7 +1,7 @@
-:root {    
-    --main-font-size: 16px; 
-    --main-font-family: Roboto, Arial,sans-serif; 
-    --main-font-weight: 400; 
+:root {
+    --main-font-size: 16px;
+    --main-font-family: Roboto, Arial, sans-serif;
+    --main-font-weight: 400;
 
     --color-70: #323c45;
     --color-60: #46535f;
@@ -10,68 +10,126 @@
     --color-30: #e1eaf1;
     --color-20: #ebf2f7;
     --color-10: #f5f8fa;
-    }
+}
 
-    *, *:before, *:after {
-        box-sizing: border-box;
-      }
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
-    .rg-border {
-        border: solid red 1px;
-    }
+.red-brd {
+    border: solid 1px red;
+}
 
-    html {
-        font-size: var(--main-font-size);
-        letter-spacing: 0.1em;
-        font-family: var(--main-font-family); 
-        color: var(--color-60);
-    }
+.green-brd {
+    border: solid 1px green;
+}
 
-    body {
-        margin: 50px 0;
-        background-color: var(--color-20);        
-    }
+html {
+    font-size: var(--main-font-size);
+    letter-spacing: 0.1em;
+    font-family: var(--main-font-family);
+    color: var(--color-60);
+}
 
-    .bold {
-        font-weight: 600;
-    }
+body {
+    margin: 50px 0;
+    background-color: var(--color-20);
+}
 
-    .to-do {
-        margin-top: 2em;
-    } 
+.bold {
+    font-weight: 600;
+}
 
-    .to-do::before {
-        content: "TODO: ";
-     }
+.to-do {
+    margin-top: 2em;
+}
 
-    h6 {
-        font-size: 1.2em; 
-    }
-    
-    h5 {
-        font-size: 1.4em;
-    }
+.to-do::before {
+    content: "TODO: ";
+}
 
-    h4 {
-        font-size: 1.5em;
-    }
-    
-    h3 {
-        font-size: 1.6em;
-    }
+h6 {
+    font-size: 1.2em;
+}
 
-    h2 {
-        font-size: 1.8em;
-    }
+h5 {
+    font-size: 1.4em;
+}
 
-    h1 {
-        font-size: 1.8em;
-    }
+h4 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
 
 
 .main-content {
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-top: 50px;  
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 50px;
 }
-   
+
+.control-section {
+    margin: 40px 20% 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;    
+    border-radius: 15px;
+    position: relative;
+}
+
+.cs-darker-bg {
+    background-color: var(--color-30);
+}
+
+.control-section .control-row {
+    display: flex;
+    align-items: center;
+}
+
+.control-section .control-section-title {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: larger;
+}
+
+.control-row>table {
+    margin-left: 10px;
+}
+
+
+.mrg-left-10 {
+    margin-left: 10%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 80%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 60%;
+}
