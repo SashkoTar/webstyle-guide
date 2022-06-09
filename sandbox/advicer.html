@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/input.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            overflow: hidden;
+
+            /* Set the navbar to fixed position */
+            top: 0;
+            padding: 0.5em;
+            /* Position the navbar at the top of the page */
+            color: var(--color-60);
+            background-color: var(--color-30);
+        }
+
+        .hyperlink {
+            color: var(--color-50);
+        }
+
+        .scrapped-page {
+            margin: 0 10% 0;
+        }
+
+        .advicer-content {
+            padding-left: 20px;
+            padding-right: 20px;            
+        }
+    </style>
+
+</head>
+<html>
+
+<body>
+
+    <div class="header"><span class="bold">Advice for </span><span class="hyperlink">https://strana.news/</span></div>
+    <div class="advicer-content">
+        <div class="hint">We've analyzed the desired page and generated the parser's configuration. Please <input
+                type="button" class="btn btn-primary mrg-left-10" value="Accept"> it if you agreed
+            with exctracted data. Otherwise you can <input type="button" class="btn mrg-left-10" value="Cancel"> it and
+            configure the parser manually
+        </div>
+        <div class="control-section scrapped-page">
+            <iframe id="inlineFrameExample" title="Inline Frame Example" height="700" style="border: 0px;width: 100%;"
+                src="https://strana.news/">
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
