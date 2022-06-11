@@ -18,14 +18,18 @@
 
             /* Set the navbar to fixed position */
             top: 0;
-            padding: 0.5em;
+            padding: 0 1em;
             /* Position the navbar at the top of the page */
             color: var(--color-60);
             background-color: var(--color-30);
         }
+        .header .control-row {
+            display: flex;
+            align-items: center;
+        }
 
-        .hyperlink {
-            color: var(--color-50);
+        hr {
+            margin: 0;
         }
 
         .scrapped-page {
@@ -43,18 +47,69 @@
 
 <body>
 
-    <div class="header"><span class="bold">Advice for </span><span class="hyperlink">https://strana.news/</span></div>
-    <div class="advicer-content">
-        <div class="hint">We've analyzed the desired page and generated the parser's configuration. Please <input
-                type="button" class="btn btn-primary mrg-left-10" value="Accept"> it if you agreed
-            with exctracted data. Otherwise you can <input type="button" class="btn mrg-left-10" value="Cancel"> it and
-            configure the parser manually
+    <div class="header">
+        <div class="control-row">
+            <span>Crawled Url:</span>
+            <label class="float-up">
+                <input type="text" placeholder="&nbsp;" value="https://strana.news/" disabled/>
+                <!--span>Crawled Url</span-->
+            </label>
+            <input type="button" class="btn btn-primary" value="Accept">
+            <input type="button" class="btn" value="Decline">
         </div>
+    </div>
+    <hr>
+    <div class="advicer-content">
+        <div class="control-section">
+            <label class="control-section-title">Advised data extraction. Agree? Then accept to have the parser configured automatically</label>
+            <div class="control-row">
+                <table style="width: 100%; font-size: 0.8em;">
+                    <tr>
+                        <th>Col1</th>
+                        <th>col2</th>
+                        <th>col3</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <div class="control-section scrapped-page">
             <iframe id="inlineFrameExample" title="Inline Frame Example" height="700" style="border: 0px;width: 100%;"
                 src="https://strana.news/">
             </iframe>
         </div>
+
+
     </div>
 </body>
 
