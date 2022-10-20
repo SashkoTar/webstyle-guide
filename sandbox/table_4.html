@@ -29,14 +29,14 @@
             padding: 4px;
         }
 
-        td>div {            
+        td>div {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
         .col-5 {
-            width: 150px;
+            width: 250px;
         }
 
         tr:not(:first-child) {
@@ -112,49 +112,42 @@
     <div class="main-content">
         <br><br><br>
 
-        <div class="control-section">
+        <div class="control-section red-brd">
             <label class="control-section-title">Informative Table</label>
-            <div class="control-row">
+            <div class="control-row green-brd">
                 <table>
+                    <caption>Student Records</caption> 
                     <tr>
-                        <th class="col-2">Company</th>
-                        <th class="col-6">Contact</th>
-                        <th>Country</th>
+                        <th class="col-5q">Name</th>
+                        <th class="col-5">Description</th>
+                        <th class="col-5">Url</th>
+                        <th class="col-5">Action</th>
                     </tr>
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td class="col-5">
-                            <div class="col-5">
-                                //html/body/div/div[@class='css-50cyfj']/div[@class='css-176aais']/form/div[@class='css-1d90tha']/div[@class='listing-grid-container
-                                css-1ox3k2t']/div[@class='css-14fnihb']/div[@class='css-19ucd76']</div>
+                        <td>ukr.net</td>
+                        <td></td>
+                        <td>
+                            <div class="col-5">https://www.ukr.net/news/main.html</div>
                         </td>
-                        <td>Mexico</td>
+                        <td>
+                            <input type="button" class="btn btn-small" value="..." />
+                            <input type="button" class="btn btn-small" value="Remove" />
+                        </td>
                     </tr>
                     <tr>
-                        <td>Ernst Handel</td>
-                        <td>Roland Mendel</td>
-                        <td>Austria</td>
+                        <td>work.ua</td>
+                        <td>
+                            <div class="col-5">JRetrieves vacancies from Work.ua</div>
+                        </td>
+                        <td>
+                            <div class="col-5">https://www.work.ua/jobs/?days=125&page=</div>
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-small" value="..." />
+                            <input type="button" class="btn btn-small" value="Remove" />
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Island Trading</td>
-                        <td>Helen Bennett</td>
-                        <td>UK</td>
-                    </tr>
-                    <tr>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Yoshi Tannamuri</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Giovanni Rovelli</td>
-                        <td>Italy</td>
-                    </tr>
+
                 </table>
             </div>
         </div>
