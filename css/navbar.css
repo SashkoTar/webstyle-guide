@@ -5,7 +5,7 @@
     width: 100%; /* Full width */
   }
 
-  ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,12 +13,12 @@
     background-color: var(--color-60);
   }
   
-  li {
+.navbar li {
     float: left;
     height: 90%;
   }
   
-  li a {
+.navbar li a {
     display: block;        
     text-align: center;
     color: var(--color-20);
@@ -26,14 +26,14 @@
     text-decoration: none;
   }
   
-  li a:hover {
+.navbar li a:hover {
     background-color: var(--color-40);             
   }
 
-  li.right {
+.navbar li.right {
     float: right;
   }
   
-  .active {
+.navbar .active {
     background-color: #04AA6D;
   }
