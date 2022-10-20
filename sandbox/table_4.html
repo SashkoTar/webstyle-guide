@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <!--link rel="stylesheet" href="../css/table.css"-->
+    <link rel="stylesheet" href="../css/input.css">
+    <style>
+        table {
+            --tbl-head-color: var(--color-50);
+            --tbl-bg: transarent;
+            --tbl-border-color: var(--color-40);
+            --tbl-stipped-bg: var(--color-30);
+            --tbl-hover-bg: var(--color-40);
+            --tbl-border-radius: 5px;
+            /*
+            border-collapse: collapse;
+            cursor: pointer;
+            */
+            border-collapse: separate;
+            border-spacing: 0 5px;
+        }
+
+        td,
+        th {
+            /* border: 1px solid var(--tbl-border-color); */
+            text-align: left;
+            padding: 4px;
+        }
+
+        td>div {            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .col-5 {
+            width: 150px;
+        }
+
+        tr:not(:first-child) {
+            background-color: var(--color-10);
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        tr:first-child {
+            color: var(--color-10);
+            background-color: var(--tbl-head-color);
+        }
+
+        tr:not(:first-child):hover {
+            background-color: var(--tbl-hover-bg);
+        }
+
+
+
+        /* top-left border-radius */
+        table th:first-child {
+            border-top-left-radius: var(--tbl-border-radius);
+            border-bottom-left-radius: var(--tbl-border-radius);
+        }
+
+        /* top-right border-radius */
+        table th:last-child {
+            border-top-right-radius: var(--tbl-border-radius);
+            border-bottom-right-radius: var(--tbl-border-radius);
+        }
+
+        table td:first-child {
+            border-top-left-radius: var(--tbl-border-radius);
+            border-bottom-left-radius: var(--tbl-border-radius);
+        }
+
+        /* top-right border-radius */
+        table td:last-child {
+            border-top-right-radius: var(--tbl-border-radius);
+            border-bottom-right-radius: var(--tbl-border-radius);
+        }
+
+        @media screen and (max-width: 992px) {
+            tr:not(:first-child) {
+                background-color: blue;
+            }
+
+        }
+
+        /* On screens that are 600px or less, set the background color to olive */
+        @media screen and (max-width: 600px) {
+            tr:not(:first-child) {
+                background-color: olive;
+            }
+        }
+    </style>
+</head>
+<html>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#input">Inputs</a></li>
+            <li><a href="parser.html">Parser</a></li>
+            <li class="right"><a href="#about">Sign Out</a></li>
+            <li class="right"><a href="#about">Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <br><br><br>
+
+        <div class="control-section">
+            <label class="control-section-title">Informative Table</label>
+            <div class="control-row">
+                <table>
+                    <tr>
+                        <th class="col-2">Company</th>
+                        <th class="col-6">Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td class="col-5">
+                            <div class="col-5">
+                                //html/body/div/div[@class='css-50cyfj']/div[@class='css-176aais']/form/div[@class='css-1d90tha']/div[@class='listing-grid-container
+                                css-1ox3k2t']/div[@class='css-14fnihb']/div[@class='css-19ucd76']</div>
+                        </td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

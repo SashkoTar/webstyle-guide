@@ -6,9 +6,8 @@ table {
   --tbl-border-color: var(--color-40);
   --tbl-stipped-bg: var(--color-30);
   --tbl-hover-bg: var(--color-40);
-  --tbl-border-radius: 10px;
-
-  border-collapse: collapse;    
+  --tbl-border-radius: 5px;
+  border-collapse: collapse;   
   cursor: pointer;
 }
 
