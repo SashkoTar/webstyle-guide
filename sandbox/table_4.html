@@ -14,19 +14,16 @@
             --tbl-stipped-bg: var(--color-30);
             --tbl-hover-bg: var(--color-40);
             --tbl-border-radius: 5px;
-            /*
-            border-collapse: collapse;
-            cursor: pointer;
-            */
+
             border-collapse: separate;
             border-spacing: 0 5px;
         }
 
         td,
         th {
-            /* border: 1px solid var(--tbl-border-color); */
+
             text-align: left;
-            padding: 4px;
+            padding: 4px 10px;
         }
 
         td>div {
@@ -42,6 +39,7 @@
         tr:not(:first-child) {
             background-color: var(--color-10);
             box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+            font-size: 0.8em;
         }
 
         tr:first-child {
@@ -78,6 +76,16 @@
             border-bottom-right-radius: var(--tbl-border-radius);
         }
 
+        .table-title {
+            float: left; 
+            font-size: larger;
+        }
+
+        .inpt-filter {
+            width: 250px !important; 
+            margin-right: 30px;
+        }
+
         @media screen and (max-width: 992px) {
             tr:not(:first-child) {
                 background-color: blue;
@@ -112,16 +120,24 @@
     <div class="main-content">
         <br><br><br>
 
-        <div class="control-section red-brd">
-            <label class="control-section-title">Informative Table</label>
-            <div class="control-row green-brd">
+        <div class="control-section">            
+            <div class="control-row">
                 <table>
-                    <caption>Student Records</caption> 
+                    <caption><span class="table-title">Parsers</span> 
+                        <span style="float: right;">
+                        <span>
+                            <input type="text" class="inpt-filter inpt-shadowed" placeholder="Find Parser" />
+                        </span>
+                        <span>
+                            <input type="button" class="btn btn-small" value="Add Parser" />
+                        </span>
+                        </span> 
+                    </caption>
                     <tr>
-                        <th class="col-5q">Name</th>
+                        <th >Name</th>
                         <th class="col-5">Description</th>
                         <th class="col-5">Url</th>
-                        <th class="col-5">Action</th>
+                        <th >Action</th>
                     </tr>
                     <tr>
                         <td>ukr.net</td>
